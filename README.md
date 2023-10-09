@@ -144,3 +144,22 @@ wavesurfer で .wav ファイルを開いて Create Pane -> Transcription で
 変換しています。このためアラインメント結果は 10ms 単位で丸められた値と
 なります。
 
+
+## 保存先を指定して実行する
+
+- shell
+```bash
+perl segment_julius.pl output_dir
+```
+
+- python
+```python
+import os
+import subprocess
+import sys
+
+args = sys.argv
+
+for dirpath, dirnames, filenames in os.walk(args[1]):
+    subprocess.call(['perl', 'segment_julius.pl', dirpath])
+```
