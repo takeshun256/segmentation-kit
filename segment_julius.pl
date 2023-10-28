@@ -54,7 +54,8 @@ if ($^O =~ /MSWin/){
 }
 
 ## acoustic model
-$hmmdefs="./models/hmmdefs_monof_mix16_gid.binhmm"; # monophone model
+# $hmmdefs="./models/hmmdefs_monof_mix16_gid.binhmm"; # monophone model
+$hmmdefs="/home/takeshun256/PausePrediction/segmentation-kit/models/hmmdefs_monof_mix16_gid.binhmm"; # monophone model
 #$hmmdefs="./models/hmmdefs_ptm_gid.binhmm"; # triphone model
 
 ## HMMList file (needed for triphone model)
