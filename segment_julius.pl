@@ -50,12 +50,14 @@ if ($^O =~ /MSWin/){
     $juliusbin=".\\bin\\julius-4.3.1.exe";
 } else {
     # $juliusbin="./bin/julius-4.3.1";
-    $juliusbin="/home/takeshun256/local/bin/julius";
+    $juliusbin="/opt/homebrew/bin/julius";
+    # $juliusbin="/home/takeshun256/local/bin/julius";
 }
 
 ## acoustic model
 # $hmmdefs="./models/hmmdefs_monof_mix16_gid.binhmm"; # monophone model
-$hmmdefs="/home/takeshun256/PausePrediction/segmentation-kit/models/hmmdefs_monof_mix16_gid.binhmm"; # monophone model
+# $hmmdefs="/home/takeshun256/PausePrediction/segmentation-kit/models/hmmdefs_monof_mix16_gid.binhmm"; # monophone model
+$hmmdefs="/Users/takeshitashunji/Programming/Data/Graduation-Study/PausePrediction/segmentation-kit/models/hmmdefs_monof_mix16_gid.binhmm"; # monophone model
 #$hmmdefs="./models/hmmdefs_ptm_gid.binhmm"; # triphone model
 
 ## HMMList file (needed for triphone model)
